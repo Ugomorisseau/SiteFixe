@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <form action="#">
+      <label for="name">Name</label>
+      <!-- for est utile pour associer l'input au label -->
+      <input placeholder="Name" type="text" id="name" name="name" />
+      <!-- champ de saisie -->
+      <br />
+      <br />
+      <label for="email">Mail</label>
+      <input
+        placeholder="exemple@gmail.com"
+        type="email"
+        id="email"
+        name="email"
+      />
+      <br />
+      <br />
+      <label for="Date">Date</label>
+      <input type="date" id="Date" name="date" />
+      <br />
+      <br />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+      <br />
+      <br />
+      <label for="description">Description</label>
+      <textarea id="description" cols="50" rows="3"></textarea>
+      <!-- Si il faut beaucoup de texte à écrire -->
+      <!-- cols: largeur en nombre de caractère -->
+      <!-- rows: nombre de lignes -->
+      <br />
+      <br />
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="man">Homme</option>
+        <option value="woman">Femme</option>
+        <option value="default" selected>Default</option>
+        <!-- select: proposition de choix -->
+      </select>
+      <br />
+      <br />
+      <label for="sport">Sport:</label> <br />
+      <input type="checkbox" id="sport" value="football" name="sport" />
+      Football
+      <br />
+      <input type="checkbox" id="sport" value="rugby" name="sport" /> Rugby
+      <br />
+      <br />
+      <label for="activité">Activité Professionnelle:</label> <br />
+      <input type="radio" id="activité" value="architecte" name="activité" />
+      Architecte <br />
+      <input type="radio" id="activité" value="Développeur" name="activité" />
+      Développeur informatique <br />
+      <br />
+      <input type="submit" value="Sauvegarder" name="Sauvegarder" />
+      <!-- soumettre un formulaire -->
+    </form>
+    <!-- tag pour déclarer un formulaire -->
+    <!-- l'attribut action sert à assigner un url auquel va être soumis le formulaire -->
+  </body>
+</html>

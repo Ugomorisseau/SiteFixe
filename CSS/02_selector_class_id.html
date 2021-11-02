@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector class id</title>
+    <style>
+      /* sélectionner une class : mettre un . puis le nom de la class */
+      .h1-red {
+        color: red;
+      }
+      .big-font {
+        font-size: 30px;
+      }
+      /* sélectionner un id */
+      #main-h1 {
+        background: blue;
+      }
+      /* Ici le fait de préciser "p" après avoir sélectionner l'id main-p permet d'appliquer cet id à seulement le paragraphe de la div */
+      #main-p p {
+        color: blueviolet;
+      }
+    </style>
+    <!-- On applique ici la couleur rouge à tous les éléments de la class h1-red -->
+  </head>
+
+  <body>
+    <h1 class="h1-red">Hello World</h1>
+    <!-- On créer une class : h1-red / permet d'appliquer seulement aux éléments de cette class les commande style -->
+    <div id="main-p">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, nobis.
+      </p>
+      <label for="">test</label>
+      <div>
+        <h3 class="h1-red big-font">Je suis un h3</h3>
+        <!-- On peut déclarer plusieurs class pour un même élément -->
+      </div>
+    </div>
+    <h1 id="main-h1">je suis un h1</h1>
+    <!-- On peut utiliser un id qui a la même fonctionnalité qu'une class mais qui ne peut s'appliquer que sur un seul élément (un id est unique) -->
+  </body>
+</html>

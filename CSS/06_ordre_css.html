@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordre d'application du css</title>
+    <style>
+      .first {
+        color: red;
+        color: violet; /* la dernière propriété qui est déclarée est prioritaire */
+      }
+      .second {
+        color: aqua; /* même chose pour l'odre de priorité / la dernière classe qui est déclarée est prioritaire */
+      }
+      p {
+        color: yellow; /* on sélectionne tous les paragraphes / moins le sélecteur est précis moins il est prioritaire / la classe est donc prioritaire ici pour le p1 */
+      }
+    </style>
+  </head>
+  <body>
+    <p class="first second">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores
+      eius veritatis harum eligendi corrupti maiores adipisci debitis quidem
+      fugit!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quis?
+    </p>
+  </body>
+</html>

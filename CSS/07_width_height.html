@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Width & Height</title>
+    <style>
+      .mydiv {
+        background: red; /* le rouge prend toute la place disponible car c'est un élément de type block */
+        min-width: 320px; /* permet de donner une largeur minimum à l'élément en question */
+        max-width: 10000px; /* même chose mais pour le max */
+        width: 100%; /* les % permettent à l'élément de se resize tout seul en fonction de la taille de la fenêtre */
+        height: 50px;
+      }
+      .myspan {
+        background: violet;
+        /* on peut mettre ce que l'on veut ici et rien ne va changer car c'est une span / une span est inline */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mydiv">1</div>
+    <span class="myspan">2</span>
+  </body>
+</html>
